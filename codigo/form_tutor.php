@@ -1,5 +1,5 @@
 <?php
-    require_once "verificar_sessao.php";
+    //require_once "verificar_sessao.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,19 +13,19 @@
         Nome: <br>
         <input type="text" name="nome"> <br><br>
 
-        CPF:
+        CPF: <br>
         <input type="text" name="cpf"><br><br>
 
-        Telefone:
+        Telefone: <br>
         <input type="text" name="telefone"><br><br>
 
-        Email:
+        Email: <br>
         <input type="text" name="email"><br><br>
 
-        Endereço:
+        Endereço: <br>
         <input type="text" name="endereco"><br><br>
 
-        Foto:
+        Foto: <br>
         <input type="text" name="foto"><br><br>
 
         <input type="submit" value="Enviar">

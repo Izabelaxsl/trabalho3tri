@@ -21,7 +21,7 @@ USE `mydb` ;
 -- Table `mydb`.`animal`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`animal` (
-  `idanimal` INT NOT NULL,
+  `idanimal` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(50) NOT NULL,
   `especie` VARCHAR(30) NOT NULL,
   `raça` VARCHAR(50) NOT NULL,
@@ -36,13 +36,13 @@ ENGINE = InnoDB;
 -- Table `mydb`.`tutor`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`tutor` (
-  `idtutor` INT NOT NULL,
+  `idtutor` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `senha` VARCHAR(200) NOT NULL,
-  `CPF` VARCHAR(14) NOT NULL,
+  `cpf` VARCHAR(14) NOT NULL,
   `telefone` VARCHAR(20) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
-  `endereço` VARCHAR(150) NOT NULL,
+  `endereco` VARCHAR(150) NOT NULL,
   `foto` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`idtutor`),
   UNIQUE INDEX `CPF_UNIQUE` (`CPF` ASC) VISIBLE,
@@ -56,7 +56,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`doacao`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`doacao` (
-  `iddoacao` INT NOT NULL,
+  `iddoacao` INT NOT NULL AUTO_INCREMENT,
   `tutor_idtutor` INT NOT NULL,
   `animal_idanimal` INT NOT NULL,
   `data_adocao` DATETIME NOT NULL,

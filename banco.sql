@@ -38,6 +38,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`tutor` (
   `idtutor` INT NOT NULL,
   `nome` VARCHAR(100) NOT NULL,
+  `senha` VARCHAR(200) NOT NULL,
   `CPF` VARCHAR(14) NOT NULL,
   `telefone` VARCHAR(20) NOT NULL,
   `email` VARCHAR(100) NOT NULL,

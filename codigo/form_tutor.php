@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="salvar_postagem.php">
+    <form action="salvar_tutor.php">
         Nome: <br>
         <input type="text" name="nome"> <br><br>
 
@@ -26,7 +26,7 @@
         <input type="text" name="endereco"><br><br>
 
         Foto: <br>
-        <input type="text" name="foto"><br><br>
+        <input type="file" name="foto"><br><br>
 
         <input type="submit" value="Enviar">
     </form>

@@ -14,13 +14,13 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `banco` DEFAULT CHARACTER SET utf8 ;
+USE `banco` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`animal`
+-- Table `banco`.`animal`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`animal` (
+CREATE TABLE IF NOT EXISTS `banco`.`animal` (
   `idanimal` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(50) NOT NULL,
   `especie` VARCHAR(30) NOT NULL,
@@ -33,9 +33,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`tutor`
+-- Table `banco`.`tutor`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`tutor` (
+CREATE TABLE IF NOT EXISTS `banco`.`tutor` (
   `idtutor` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `senha` VARCHAR(200) NOT NULL,
@@ -53,9 +53,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`doacao`
+-- Table `banco`.`doacao`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`doacao` (
+CREATE TABLE IF NOT EXISTS `banco`.`doacao` (
   `iddoacao` INT NOT NULL AUTO_INCREMENT,
   `tutor_idtutor` INT NOT NULL,
   `animal_idanimal` INT NOT NULL,
@@ -81,7 +81,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-USE mydb;
+USE banco;
 
 INSERT INTO animal (idanimal, nome, especie, raça, idade, sexo, porte)
 VALUES

@@ -2,9 +2,12 @@
 require_once "conexao.php";
 
 $nome = $_POST['nome'];
-$apelido = $_POST['apelido'];
+$cpf = $_POST['cpf'];
+$telefone = $_POST['telefone'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
+$endereco = $_POST['endereco'];
+$foto = $_POST['foto'];
 
 $senha_nova = password_hash($senha, PASSWORD_DEFAULT);
 

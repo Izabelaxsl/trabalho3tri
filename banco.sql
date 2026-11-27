@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `banco`.`tutor` (
   `cpf` VARCHAR(14) NOT NULL,
   `telefone` VARCHAR(20) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
+  `senha` VARCHAR(200) NOT NULL,
   `endereco` VARCHAR(150) NOT NULL,
   `foto` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`idtutor`),
@@ -55,7 +56,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `banco`.`doacao`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `banco`.`doacao` (
+CREATE TABLE IF NOT EXISTS `banco`.`adocao` (
   `iddoacao` INT NOT NULL AUTO_INCREMENT,
   `tutor_idtutor` INT NOT NULL,
   `animal_idanimal` INT NOT NULL,
